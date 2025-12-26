@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f5f5f5;
+  }
+  
+  .buscador {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .card {
+    width: 300px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 15px;
+    animation: aparecer 0.5s ease;
+  }
+  
+  .card-content {
+    background: rgba(255,255,255,0.85);
+    border-radius: 15px;
+    padding: 15px;
+  }
+  
+  .card img {
+    width: 180px;
+    animation: flotar 2s infinite ease-in-out;
+  }
+  
+  .tipo {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: white;
+    margin: 5px;
+    text-transform: capitalize;
+  }
+  
+  .stats {
+    text-align: left;
+  }
+  
+  .evoluciones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .evo {
+    background: rgba(0,0,0,0.2);
+    padding: 6px 12px;
+    border-radius: 15px;
+    text-transform: capitalize;
+  }
+  
+  .sin-evo {
+    font-style: italic;
+    opacity: 0.8;
+  }
+  
+  /* ✨ ANIMACIONES */
+  @keyframes aparecer {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  @keyframes flotar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+  }
+  .stats {
+    margin-top: 10px;
+  }
+  
+  .stat {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+    font-size: 13px;
+  }
+  
+  .stat-name {
+    width: 80px;
+    text-transform: capitalize;
+  }
+  
+  .stat-bar {
+    flex: 1;
+    height: 8px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .stat-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ffcc00, #ff8800);
+    border-radius: 10px;
+    animation: llenar 0.8s ease-out;
+  }
+  
+  .stat-value {
+    width: 30px;
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  @keyframes llenar {
+    from { width: 0; }
+  }
+  .evoluciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .evo {
+    background: rgba(0,0,0,0.2);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  .flecha {
+    font-size: 18px;
+    opacity: 0.6;
+  }
+  
+  
