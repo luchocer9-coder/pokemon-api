@@ -28,7 +28,7 @@ async function buscarPokemon() {
   if (!nombre) return;
 
   try {
-    const res = await fetch(`http://localhost:3000/pokemon/${nombre}`);
+    const res = await fetch(`/pokemon/${nombre}`);
     const data = await res.json();
 
     let fondo;
